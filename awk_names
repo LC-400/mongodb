@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "var document=["
+awk '{print "{" "NAME:" "\"" $1 " " $2 " " $3 " " $4 " " $5 " " $6"\"" "," """PRE-FILLED FIELD:""\"" "PRE-FILLED FIELD" "\"" ","  """PRE-FILLED FIELD:" "\"" "" "\"" "," """PRE-FILLED FIELD:" "\"" "" "\""  "}" ","}' source_file
+echo "];"
+echo "db.YOUR_COLLECTION.insert(document);"
+
