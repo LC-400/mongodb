@@ -6,7 +6,7 @@ Run "awk_names" against the edited source file to create a formatted file. Remem
 to be inserted into your mongo database-collection. Add necessary pre-filled fields here and 
 allow for a person having multiple names
 
-Create the formatted list of names with:  "/. awk_names | tee add_names.js". Observe folder 
+Create the formatted list of names with:  "./awk_names | tee add_names.js". Observe folder 
 permissions to ensure the creation of the file "add_names.js".
 
 The file "add_names.js" will be the argument to the mongodb-command for communicating with 
